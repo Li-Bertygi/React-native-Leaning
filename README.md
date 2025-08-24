@@ -2,8 +2,8 @@
 
 ## 개요
 
-React Native 학습용 코드.
-이하의 동영상을 참조하여 제작:
+React Native 학습용 코드.  
+이하의 동영상을 참조하여 제작:  
 https://www.youtube.com/watch?v=eyXphecowKI&list=PLoFgufO-380VrNq1-g4CCH4pdkFEI9CJu&index=1
 
 ## 작동방법
