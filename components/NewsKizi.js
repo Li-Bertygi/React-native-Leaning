@@ -1,23 +1,28 @@
-import { StyleSheet, Text, View, Image } from "react-native";
+import { StyleSheet, Text, View, Image, TouchableOpacity } from "react-native";
 
-const NewsKizi = ({ imageuri, title, subtext }) => {
+const NewsKizi = ({ imageuri, title, subtext, onPress }) => {
+  var date = new Date(subtext);
+  var year = date.getFullYear();
+  var month = date.getMonth() + 1;
+  var day = date.getDate();
+  var koukaihiduke = year + "年" + month + "月" + day + "日";
   return (
-    <View style={styles.container}>
-      <View style={styles.box}>
-        <View style={styles.moziBox}>
-          <Text style={styles.Text}>{title}</Text>
-          <Text style={styles.subText}>{subtext}</Text>
-        </View>
-        <View style={styles.gazoBox}>
-          <Image
-            style={{ width: 100, height: 100 }}
-            source={{
-              uri: imageuri,
-            }}
-          />
-        </View>
+    <TouchableOpacity style={styles.box} onPress={onPress}>
+      <View style={styles.moziBox}>
+        <Text numberOfLines={3} style={styles.Text}>
+          {title}
+        </Text>
+        <Text style={styles.subText}>{koukaihiduke}</Text>
       </View>
-    </View>
+      <View style={styles.gazoBox}>
+        <Image
+          style={{ width: 100, height: 100 }}
+          source={{
+            uri: imageuri,
+          }}
+        />
+      </View>
+    </TouchableOpacity>
   );
 };
 export default NewsKizi;
@@ -33,14 +38,12 @@ const styles = StyleSheet.create({
 
   moziBox: {
     flex: 1,
-    backgroundColor: "steelblue",
     padding: 16,
     justifyContent: "space-between",
   },
 
   gazoBox: {
     width: 100,
-    backgroundColor: "powderblue",
   },
 
   Text: {
@@ -49,6 +52,6 @@ const styles = StyleSheet.create({
 
   subText: {
     fontSize: 12,
-    color: "red",
+    color: "darkblue",
   },
 });
