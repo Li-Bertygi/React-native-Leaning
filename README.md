@@ -4,7 +4,7 @@
 
 React Native 학습용 코드.  
 이하의 동영상을 참조하여 제작:  
-https://www.youtube.com/watch?v=eyXphecowKI&list=PLoFgufO-380VrNq1-g4CCH4pdkFEI9CJu&index=1
+https://www.youtube.com/watch?v=eyXphecowKI&list=PLoFgufO-380VrNq1-g4CCH4pdkFEI9CJu&index=1  
 News API Key 취득:  
 https://newsapi.org/
 
@@ -22,7 +22,7 @@ https://newsapi.org/
 
 React Native 学習用のコードです。  
 以下のチュートリアル動画を参考にして作成しました：  
-https://www.youtube.com/watch?v=eyXphecowKI&list=PLoFgufO-380VrNq1-g4CCH4pdkFEI9CJu&index=1
+https://www.youtube.com/watch?v=eyXphecowKI&list=PLoFgufO-380VrNq1-g4CCH4pdkFEI9CJu&index=1  
 News API キーの取得：  
 https://newsapi.org/
 
@@ -40,7 +40,7 @@ https://newsapi.org/
 
 This is a React Native practice project.  
 Created by following this tutorial series:  
-https://www.youtube.com/watch?v=eyXphecowKI&list=PLoFgufO-380VrNq1-g4CCH4pdkFEI9CJu&index=1
+https://www.youtube.com/watch?v=eyXphecowKI&list=PLoFgufO-380VrNq1-g4CCH4pdkFEI9CJu&index=1  
 Obtain a News API key here:  
 https://newsapi.org/
 
