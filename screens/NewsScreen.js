@@ -1,10 +1,10 @@
+// .\screens\NewsScreen.js
 import React, { useState, useEffect } from "react";
 import { StyleSheet, View, FlatList, SafeAreaView } from "react-native";
 import NewsKizi from "../components/NewsKizi";
-import Constants from "expo-constants";
+import { NEWS_KEY } from "../src/config/keys";
 import axios from "axios";
-
-const URI = `https://newsapi.org/v2/top-headlines?country=us&category=entertainment&apiKey=${Constants.expoConfig.extra.newsApiKey}`;
+const URI = `https://newsapi.org/v2/top-headlines?country=us&apiKey=${NEWS_KEY}`;
 
 export default function NewsScreen({ navigation }) {
   const [news, setNews] = useState([]);
@@ -38,6 +38,6 @@ export default function NewsScreen({ navigation }) {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: "#fff", // 배경색
+    backgroundColor: "#fff",
   },
 });

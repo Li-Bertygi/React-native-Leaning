@@ -1,3 +1,4 @@
+// .\App.js
 import React from "react";
 import { NavigationContainer } from "@react-navigation/native";
 import { createStackNavigator } from "@react-navigation/stack";
@@ -13,7 +14,7 @@ const Tab = createBottomTabNavigator();
 const NewsStack = () => {
   return (
     <Stack.Navigator>
-      <Stack.Screen name="ニュース" component={NewsScreen} />
+      <Stack.Screen name="メイン" component={NewsScreen} />
       <Stack.Screen name="詳細ページ" component={DetailScreen} />
     </Stack.Navigator>
   );
@@ -21,7 +22,11 @@ const NewsStack = () => {
 
 const WeatherStack = () => {
   return (
-    <Stack.Navigator>
+    <Stack.Navigator
+      screenOptions={{
+        headerShown: false,
+      }}
+    >
       <Stack.Screen name="天気予報" component={WeatherScreen} />
     </Stack.Navigator>
   );
@@ -35,6 +40,7 @@ const screenOption = ({ route }) => ({
     } else if (route.name === "天気予報") {
       iconName = "sun-o";
     }
+
     return <FontAwesome name={iconName} size={size} color={color} />;
   },
 });

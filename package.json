@@ -11,10 +11,12 @@
   },
   "dependencies": {
     "@react-native-community/masked-view": "^0.1.11",
-    "@react-navigation/bottom-tabs": "^5.11.15",
-    "@react-navigation/native": "^5.9.8",
-    "@react-navigation/stack": "^5.14.9",
+    "@react-navigation/bottom-tabs": "^7.4.6",
+    "@react-navigation/drawer": "^7.5.7",
+    "@react-navigation/native": "^7.1.17",
+    "@react-navigation/stack": "^7.4.7",
     "axios": "^1.11.0",
+    "eas-cli": "^16.18.0",
     "expo": "~53.0.22",
     "expo-constants": "~17.1.7",
     "expo-splash-screen": "~0.30.10",
@@ -25,10 +27,12 @@
     "react-native-reanimated": "~3.17.4",
     "react-native-safe-area-context": "5.4.0",
     "react-native-screens": "~4.11.1",
-    "react-native-webview": "13.13.5"
+    "react-native-webview": "13.13.5",
+    "expo-dev-client": "~5.2.4"
   },
   "devDependencies": {
-    "@babel/core": "^7.20.0"
+    "@babel/core": "^7.20.0",
+    "expo-module-scripts": "^4.1.10"
   },
   "private": true
 }

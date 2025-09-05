@@ -1,12 +1,12 @@
 {
   "expo": {
-    "name": "may-new-project",
+    "name": "News",
     "slug": "may-new-project",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "userInterfaceStyle": "light",
-    "newArchEnabled": true,
+    "newArchEnabled": false,
     "splash": {
       "image": "./assets/splash-icon.png",
       "resizeMode": "contain",
@@ -17,16 +17,21 @@
     },
     "android": {
       "adaptiveIcon": {
-        "foregroundImage": "./assets/adaptive-icon.png",
+        "foregroundImage": "./assets/icon.png",
         "backgroundColor": "#ffffff"
       },
-      "edgeToEdgeEnabled": true
+      "edgeToEdgeEnabled": true,
+      "package": "com.bertygi.maynewproject"
     },
     "web": {
       "favicon": "./assets/favicon.png"
     },
     "extra": {
-      "newsApiKey": "YOUR KEY"
+      "newsApiKey": "YOUR KEY",
+      "weatherApiKey": "YOUR KEY",
+      "eas": {
+        "projectId": "PROJECT ID"
+      }
     }
   }
 }

@@ -1,3 +1,4 @@
+// .\components\NewsKizi.js
 import { StyleSheet, Text, View, Image, TouchableOpacity } from "react-native";
 
 const NewsKizi = ({ imageuri, title, subtext, onPress }) => {

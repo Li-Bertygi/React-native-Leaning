@@ -1,3 +1,4 @@
+// .\screens\DetailScreen.js
 import React from "react";
 import { WebView } from "react-native-webview";
 import { StyleSheet } from "react-native";
