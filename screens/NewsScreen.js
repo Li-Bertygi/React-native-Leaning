@@ -26,7 +26,7 @@ export default function NewsScreen({ navigation }) {
             imageuri={item.urlToImage}
             title={item.title}
             subtext={item.publishedAt}
-            onPress={() => navigation.navigate("詳細ページ", { article: item })}
+            onPress={() => navigation.navigate("Detail", { article: item })}
           />
         )}
         keyExtractor={(item, index) => index.toString()}
