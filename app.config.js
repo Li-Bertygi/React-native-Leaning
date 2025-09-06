@@ -1,4 +1,5 @@
 // app.config.js
+import "dotenv/config";
 export default ({ config }) => ({
   ...config,
   name: "News",
@@ -38,5 +39,6 @@ export default ({ config }) => ({
     eas: { projectId: "PROJECT ID" },
     newsApiKey: process.env.NEWS_API_KEY,
     weatherApiKey: process.env.WEATHER_API_KEY,
+    googleNewsApiKey: process.env.GOOGLE_NEWS_API_KEY,
   },
 });

@@ -8,6 +8,7 @@ https://www.youtube.com/watch?v=eyXphecowKI&list=PLoFgufO-380VrNq1-g4CCH4pdkFEI9
 API Key 취득:  
 News API: https://newsapi.org/  
 Weather API: https://openweathermap.org/api
+GNews API: https://gnews.io/
 
 # 日本語
 
@@ -19,6 +20,7 @@ https://www.youtube.com/watch?v=eyXphecowKI&list=PLoFgufO-380VrNq1-g4CCH4pdkFEI9
 API キーの取得：  
 News API: https://newsapi.org/  
 Weather API: https://openweathermap.org/api
+GNews API: https://gnews.io/
 
 # English
 
@@ -30,3 +32,4 @@ https://www.youtube.com/watch?v=eyXphecowKI&list=PLoFgufO-380VrNq1-g4CCH4pdkFEI9
 Obtain an API key here:  
 News API: https://newsapi.org/  
 Weather API: https://openweathermap.org/api
+GNews API: https://gnews.io/

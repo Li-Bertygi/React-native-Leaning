@@ -29,6 +29,7 @@
     "extra": {
       "newsApiKey": "YOUR KEY",
       "weatherApiKey": "YOUR KEY",
+      "googleNewsApiKey": "YOUR KEY",
       "eas": {
         "projectId": "PROJECT ID"
       }

@@ -6,7 +6,7 @@ const NewsKizi = ({ imageuri, title, subtext, onPress }) => {
   var year = date.getFullYear();
   var month = date.getMonth() + 1;
   var day = date.getDate();
-  var koukaihiduke = year + "年" + month + "月" + day + "日";
+  var koukaihiduke = month + "/" + day + "/" + year;
   return (
     <TouchableOpacity style={styles.box} onPress={onPress}>
       <View style={styles.moziBox}>
@@ -27,6 +27,33 @@ const NewsKizi = ({ imageuri, title, subtext, onPress }) => {
   );
 };
 export default NewsKizi;
+
+const NewsKiziJP = ({ item, onPress }) => {
+  var date = new Date(item.publishedAt);
+  var year = date.getFullYear();
+  var month = date.getMonth() + 1;
+  var day = date.getDate();
+  var koukaihiduke = year + "年" + month + "月" + day + "日";
+  return (
+    <TouchableOpacity style={styles.box} onPress={onPress}>
+      <View style={styles.moziBox}>
+        <Text numberOfLines={3} style={styles.title}>
+          {item.title}
+        </Text>
+        <Text style={styles.subText}>{koukaihiduke}</Text>
+      </View>
+      <View style={styles.gazoBox}>
+        <Image
+          style={{ width: 100, height: 100 }}
+          source={{
+            uri: item.image || "https://placehold.co/120x90?text=No+Image",
+          }}
+        />
+      </View>
+    </TouchableOpacity>
+  );
+};
+export { NewsKiziJP };
 
 const styles = StyleSheet.create({
   box: {
