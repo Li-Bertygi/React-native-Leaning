@@ -1,4 +1,4 @@
-// .\components\NewsKizi.js
+// ./components/NewsKizi.js
 import { StyleSheet, Text, View, Image, TouchableOpacity } from "react-native";
 
 const NewsKizi = ({ imageuri, title, subtext, onPress }) => {
@@ -54,6 +54,23 @@ const NewsKiziJP = ({ item, onPress }) => {
   );
 };
 export { NewsKiziJP };
+
+const NewsKiziKR = ({ item, onPress }) => {
+  var date = new Date(item.publishedAt);
+  var year = date.getFullYear();
+  var month = date.getMonth() + 1;
+  var day = date.getDate();
+  var koukaihiduke = year + "년" + month + "월" + day + "일";
+  return (
+    <TouchableOpacity style={styles.box} onPress={onPress}>
+      <View style={styles.moziBox}>
+        <Text style={styles.title}>{item.title}</Text>
+        <Text style={styles.subText}>{koukaihiduke}</Text>
+      </View>
+    </TouchableOpacity>
+  );
+};
+export { NewsKiziKR };
 
 const styles = StyleSheet.create({
   box: {

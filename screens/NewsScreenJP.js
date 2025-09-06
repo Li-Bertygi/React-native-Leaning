@@ -1,4 +1,4 @@
-// .\screens\NewsScreenJP.js
+// ./screens/NewsScreenJP.js
 import React, { useEffect, useState, useCallback } from "react";
 import {
   View,

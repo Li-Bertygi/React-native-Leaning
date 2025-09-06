@@ -1,4 +1,4 @@
-// components/WeatherItem.js
+// ./components/WeatherItem.js
 import React from "react";
 import { StyleSheet, Text, View, Image } from "react-native";
 

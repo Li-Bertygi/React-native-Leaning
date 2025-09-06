@@ -1,4 +1,4 @@
-// .\screens\WeatherScreenJP.js
+// ./screens/WeatherScreenJP.js
 import React, { useState, useEffect } from "react";
 import { StyleSheet, View, FlatList, SafeAreaView } from "react-native";
 import WeatherItem from "../components/WeatherItem";

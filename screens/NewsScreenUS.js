@@ -1,4 +1,4 @@
-// .\screens\NewsScreenUS.js
+// ./screens/NewsScreenUS.js
 import React, { useState, useEffect } from "react";
 import { StyleSheet, View, FlatList, SafeAreaView } from "react-native";
 import NewsKizi from "../components/NewsKizi";
