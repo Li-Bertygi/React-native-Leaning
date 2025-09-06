@@ -1,4 +1,4 @@
-// .\screens\WeatherScreen.js
+// .\screens\WeatherScreenJP.js
 import React, { useState, useEffect } from "react";
 import { StyleSheet, View, FlatList, SafeAreaView } from "react-native";
 import WeatherItem from "../components/WeatherItem";
@@ -59,7 +59,7 @@ const TotalUri = [
   Okinawa,
 ];
 
-export default function WeatherScreen() {
+export default function WeatherScreenJP() {
   const [weather, setWeathers] = useState([]);
   useEffect(() => {
     TotalUri.forEach((info) => {
@@ -77,6 +77,7 @@ export default function WeatherScreen() {
   return (
     <SafeAreaView style={styles.container}>
       <FlatList
+        style={{ flex: 1, width: "100%" }}
         data={weather}
         renderItem={({ item }) => (
           <WeatherItem
@@ -94,7 +95,5 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     backgroundColor: "#fff",
-    alignItems: "center",
-    justifyContent: "center",
   },
 });

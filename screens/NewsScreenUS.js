@@ -1,4 +1,4 @@
-// .\screens\NewsScreen.js
+// .\screens\NewsScreenUS.js
 import React, { useState, useEffect } from "react";
 import { StyleSheet, View, FlatList, SafeAreaView } from "react-native";
 import NewsKizi from "../components/NewsKizi";
@@ -6,7 +6,7 @@ import { NEWS_KEY } from "../src/config/keys";
 import axios from "axios";
 const URI = `https://newsapi.org/v2/top-headlines?country=us&apiKey=${NEWS_KEY}`;
 
-export default function NewsScreen({ navigation }) {
+export default function NewsScreenUS({ navigation }) {
   const [news, setNews] = useState([]);
   useEffect(() => {
     getNews();
