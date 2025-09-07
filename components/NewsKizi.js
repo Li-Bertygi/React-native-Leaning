@@ -1,7 +1,7 @@
 // ./components/NewsKizi.js
 import { StyleSheet, Text, View, Image, TouchableOpacity } from "react-native";
 
-const NewsKizi = ({ imageuri, title, subtext, onPress }) => {
+const NewsKiziUS = ({ imageuri, title, subtext, onPress }) => {
   var date = new Date(subtext);
   var year = date.getFullYear();
   var month = date.getMonth() + 1;
@@ -26,7 +26,7 @@ const NewsKizi = ({ imageuri, title, subtext, onPress }) => {
     </TouchableOpacity>
   );
 };
-export default NewsKizi;
+export default NewsKiziUS;
 
 const NewsKiziJP = ({ item, onPress }) => {
   var date = new Date(item.publishedAt);
